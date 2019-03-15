@@ -7,7 +7,6 @@ import android.os.Build;
 import android.preference.PreferenceManager;
 import android.support.annotation.Nullable;
 import android.text.TextUtils;
-import android.util.Log;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -21,7 +20,6 @@ import java.util.Set;
 public class SecuritySharedPreference implements SharedPreferences {
 
 	private SharedPreferences mSharedPreferences;
-	private static final String TAG = SecuritySharedPreference.class.getName();
 	private Context mContext;
 
 	/**
@@ -168,7 +166,6 @@ public class SecuritySharedPreference implements SharedPreferences {
 		Map<String, ?> oldMap = mSharedPreferences.getAll();
 		Map<String, String> newMap = new HashMap<>();
 		for (Map.Entry<String, ?> entry : oldMap.entrySet()) {
-			Log.i(TAG, "key:" + entry.getKey() + ", value:" + entry.getValue());
 			newMap.put(encryptPreference(entry.getKey()),
 					encryptPreference(entry.getValue().toString()));
 		}

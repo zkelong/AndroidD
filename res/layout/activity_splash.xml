@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/pc_splash"
-    tools:context="com.example.guidetest.SplashActivity">
-    
+    tools:context="com.kelong.androidnative.SplashActivity">
 
 </RelativeLayout>

@@ -19,7 +19,7 @@ public class SplashActivity extends Activity {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_splash);
-		rlSplash = (RelativeLayout) findViewById(R.id.rl_splash);
+		rlSplash = findViewById(R.id.rl_splash);
 		startAnim();
 	}
 	
@@ -62,6 +62,6 @@ public class SplashActivity extends Activity {
 	        } else {
 		    	startActivity(new Intent(SplashActivity.this, GuideActivity.class));
 	        }
-	        finish();
+	        this.finish();
 	    }
 }

@@ -18,6 +18,7 @@ import java.util.List;
 
 import com.kelong.file.SecuritySharedPreference;
 import com.kelong.ui.PageDots;
+import com.kelong.utils.ApplicationConfig;
 import com.kelong.utils.DensityUtils;
 
 public class GuideActivity extends Activity {
@@ -36,14 +37,13 @@ public class GuideActivity extends Activity {
     /**
      * 功能引导页展示的图片集合
      */
-    private static int[] mImageIds = new int[]{R.drawable.guide1,
-            R.drawable.guide2, R.drawable.guide3, R.drawable.guide4};
+    private int[] mImageIds;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_guide);
-
+        mImageIds = ApplicationConfig.guideImages;
         initView();
     }
 
