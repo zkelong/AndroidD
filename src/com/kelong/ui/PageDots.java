@@ -26,11 +26,9 @@ public class PageDots extends RelativeLayout {
 		super(context);
 		mContext = context;
 		((Activity) getContext()).getLayoutInflater().inflate(
-				R.drawable.page_dot, this);
-		root = (RelativeLayout) findViewById(R.id.page_dot_root);
-		lly = (LinearLayout) findViewById(R.id.page_dot_ly);
-//		lly.setPadding(10, 0, 0, 0);
-		// red_dot = findViewById(R.id.page_dot_red);
+				R.layout.page_dot, this);
+		root = findViewById(R.id.page_dot_root);
+		lly = findViewById(R.id.page_dot_ly);
 		setDots(count);
 		
 		// 获取控件树，对 layout 结束事件进行监听
@@ -54,12 +52,6 @@ public class PageDots extends RelativeLayout {
 	}
 
 	private void setDots(int num) {
-//		LinearLayout.LayoutParams mParams = new LinearLayout.LayoutParams(
-//				LinearLayout.LayoutParams.WRAP_CONTENT,
-//				LinearLayout.LayoutParams.WRAP_CONTENT);
-//
-//		mParams.setMargins(DensityUtils.dp2px(mContext, 10), 0, 0, 0);
-
 		for (int i = 0; i < num; i++) {
 			View dot = new View(mContext);
 			lly.addView(dot);//, mParams);

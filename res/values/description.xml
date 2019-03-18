@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="description">
+        <item>com.example.app.activity | Activity 类</item>
+        <item>com.example.app.activity | Activity 类</item>
+        <item>com.example.app.widget	 | 自定义的小UI</item>
+        <item>com.example.app.db | 数据库相关操作</item>
+        <item>com.example.app.domain/modle/bean/entity | 实体</item>
+        <item>com.example.app.engine | 存放业务层，因为service冲突</item>
+        <item>com.example.app.service | 服务</item>
+        <item>com.example.app.util | 工具包类</item>
+        <item>com.example.app.constant |常量包类</item>
+        <item>com.example.app.adapter	| 适配器类</item>
+        <item>com.example.app.receiver | 广播接收器</item>
+        <item>com.example.app.listener | 监听器 一般我都不用，嘿嘿，内部类比较方便</item>
+        <item>com.example.app.模块名称.api | 独立或第三方模块包</item>
+    </string-array>
+    <string-array name="should_do">
+        <item>收集崩溃日志并上传</item>
+    </string-array>
+</resources>

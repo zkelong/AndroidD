@@ -11,11 +11,3 @@
         android:orientation="horizontal" >
     </LinearLayout>
 </RelativeLayout>
-<!--
-    <View
-        android:id="@+id/page_dot_red"
-        android:layout_width="10dp"
-        android:layout_height="10dp"
-        android:visible="false"
-        android:background="@drawable/shape_dot_red" />
--->
